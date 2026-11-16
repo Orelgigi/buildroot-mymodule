@@ -1,0 +1,5 @@
+config BR2_PACKAGE_MYMODULE
+	bool "mymodule"
+	depends on BR2_LINUX_KERNEL
+	help
+	  Build the hello world kernel module.
