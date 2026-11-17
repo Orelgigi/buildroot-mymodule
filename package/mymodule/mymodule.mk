@@ -1,6 +1,5 @@
-MYMODULE_VERSION = 1.0
-MYMODULE_SITE = $(HOME)/module_lab/buildroot-mymodule
-MYMODULE_SITE_METHOD = local
+MYMODULE_VERSION = v1.1
+MYMODULE_SITE = $(call github,Orelgigi,buildroot-mymodule,v$(MYMODULE_VERSION))
 
 $(eval $(kernel-module))
 $(eval $(generic-package))
